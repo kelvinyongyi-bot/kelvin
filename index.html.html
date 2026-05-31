@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>个人主页</title>
+<div class="bottom-text">
+百分百的死亡游戏从来不害怕，因为在最后的30秒大脑会为您播放美好人生的结算</div>
+  
+<style>
+*{
+    margin:0;
+    padding:0;
+}
+
+video{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-1;
+    filter: contrast(1.15) saturate(1.2) brightness(1.05);
+}
+
+.content{
+    color:white;
+    text-align:center;
+    margin-top:170px;
+    font-size:28px;
+    text-align:content;
+}
+  
+.bottom-text{
+    position:fixed;
+    font-size:18px;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    color:#000000   
+}
+</style>
+</head>
+
+<body>
+
+<video autoplay muted loop playsinline>
+    <source src="video/background.mp4" type="video/mp4">
+</video>
+
+<div class="content">
+
+<audio id="bgm" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener('click', function () {
+    document.getElementById('bgm').play();
+}, { once: true });
+</script>
+
+    <h1>Kelvin Yong</h1>
+    <h2>个人主页<h2>
+    
+</div>
+       
+</body>
+</html>
